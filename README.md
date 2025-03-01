@@ -1,2 +1,24 @@
-# threadly
-Threadly wants to create a Rails app for their commenting service. When a user types a comment into the box and clicks the Post button, the comment is saved into a database.
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
