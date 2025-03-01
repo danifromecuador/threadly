@@ -8,3 +8,8 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+ html {
+  background-color: black;
+  color: white;
+ }

@@ -7,6 +7,10 @@ class PostsController < ApplicationController
     pp "##############################"
     pp @all_posts
   end
+
+  def show
+    @post = Post.find(params[:id])
+  end
   
   def create
     @new_post = Post.new(post_params)

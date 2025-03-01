@@ -17,7 +17,7 @@
     
     <ul class="comments">
       <% @all_posts.each do |p| %>
-        <li><%= p.comment %></li>
+        <li><%= link_to p.comment, p %></li>
       <% end %>
     </ul>
 
