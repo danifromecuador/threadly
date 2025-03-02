@@ -11,15 +11,25 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
   end
-  
+
   def create
     @new_post = Post.new(post_params)
-    redirect_to root_path if @new_post.save
+    if @new_post.save
+      redirect_to root_path
+    else
+      render :error, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to root_path
   end
 
   private
   def post_params
-    params.require(:post).permit(:comment)
+    params.expect(post: [:comment])
   end
 
 end
