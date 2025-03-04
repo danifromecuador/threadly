@@ -1,0 +1,31 @@
+
+
+.header
+  .container
+    %h1 Threadly
+
+
+-# <div class="main">
+-#   <div class="container">
+-#     <%= form_for @new_post do |f| %>
+-#       <%= f.text_field :comment, :placeholder => "Share yout thoughts" %>
+-#       <%= f.submit "Post", :class => "btn" %>
+-#     <% end %>    
+-#     <ul class="comments">
+-#       <% @all_posts.each do |p| %>
+-#         <li><%= link_to p.comment, p %></li>
+-#       <% end %>
+-#     </ul>
+-#   </div>
+-# </div>
+
+.main
+  .container
+    = form_for @new_post do |f|
+      = f.text_field :comment, placeholder: "Share your thoughts"
+      = f.submit "Post", class: "btn"
+    %ul.comments
+      - @all_posts.each do |p|
+        #li 
+          = link_to p.comment, p
+
