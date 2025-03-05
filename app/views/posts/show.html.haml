@@ -1,0 +1,4 @@
+%div
+  = "id: #{@post.id}, comment: #{@post.comment}"
+  = button_to "delete", @product, method: :delete, data:{turbo_confirm: "Are you sure?"}
+= button_to 'back', posts_path
