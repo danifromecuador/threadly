@@ -10,6 +10,17 @@
  */
 
  html {
+  height: 100vh;
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ body {
+  width: 80%;
+  height: 80%;
+  border: 1px solid red;
+  padding: 1vw;
  }
